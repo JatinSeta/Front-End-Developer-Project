@@ -1,0 +1,61 @@
+*{
+    text-align: center;
+}
+#search_div{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+}
+#search{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 10px;
+}
+#button{
+    font-size: 16px;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+#card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+#user_div{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.hidden{
+     display: none !important;
+}
+.vissible{
+    display: block;
+}
+#error{
+    text-align: center;
+    color: red;
+    font-family: sans-serif;
+    width: 100%;
+}
+@media screen and (max-width :768px) {
+    #card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media screen and (max-width : 425px) {
+    #card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
