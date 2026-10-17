@@ -56,7 +56,7 @@ button.addEventListener("click", async function () {
     const data = await response.json();
     let isFound = true;
     for(let i=0;i< data.length ; i++){
-    if (search.value == data[i].name) {
+    if (search.value.toLowerCase() == data[i].name.toLowerCase()) {
         card.innerHTML = ""
         renderDatarenderUsers(data[i]);
         break;
