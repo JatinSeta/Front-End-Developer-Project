@@ -7,10 +7,30 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="search_div">
-        <input type="text" placeholder="Search User ..." id="search">
+    <div id="">
+       <div id="search_div" >
+        <div>
+         <input type="text" placeholder="Search User ..." id="search">
         <button id="button">Search</button>
+       </div>
+         <div class="city_div">
+         <select id="city_select">
+       </select>
+       <button id="search_city_button">Search By City</button>
+       </div>
+       </div>
+     <div id="search_city">
+          <div id="button_div">
+        <button id="filter_button">Filter A to Z</button>
+        <button id="reset_button">Reset</button>
+       </div>
+    <div id="status_count_div">
+        <p id="status"></p>
+        <p id="count"></p>
+       </div>
+     </div>
     </div>
+    <p id="file_search"></p>
     <div id="card">
     </div>
     <script src="./index.js"></script>
